@@ -1,0 +1,116 @@
+.btnCunt {
+  position: relative;
+  opacity: 0;
+}
+
+.container {
+  text-align: center;
+  max-width: 80%;
+  min-height: 10%;
+  overflow-y: hidden;
+
+  margin: 0rem auto;
+}
+
+.buttonWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 423%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btnCat {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-button-green);
+  color: var(--color-white);
+  width: 47%;
+  min-height: 5rem;
+  padding: 0rem 1rem;
+  z-index: 2;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.button svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* 1 rem = 10 px */
+/** Breakpoints:
+
+mobile:
+  xxs: min-width: 360px
+  xs: min-width: 375px;
+  s: min-width: 390px;
+  md: min-width: 412px;
+
+tablet: 
+  sm: min-width: 768px;
+  md: min-width: 820px;
+  lg: min-width: 912px;
+
+
+desktop:
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+**/
+
+@media (min-width: 768px) {
+  .btnCunt {
+    position: relative;
+    opacity: 1;
+  }
+
+  .next {
+    position: absolute;
+    right: 3%;
+    height: inherit;
+    top: 4rem;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: transparent;
+  }
+  .prev {
+    position: absolute;
+    left: 3%;
+    top: 2rem;
+    height: inherit;
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: transparent;
+  }
+}
+
+@media (min-width: 1024px) {
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 100rem;
+    overflow-y: hidden;
+  }
+
+  .btnCat {
+    width: 30%;
+  }
+}

@@ -1,0 +1,167 @@
+.header {
+  background-color: var(--color-primary);
+  border-bottom: 0.5rem solid var(--color-secondary);
+  min-height: 25vh;
+  height: 20rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.titleContainer {
+  margin: 0 3rem;
+
+  max-width: 1000px;
+  width: 100%;
+}
+
+.h1 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.p {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.circleSection {
+  height: 7rem;
+  position: relative;
+}
+
+[class*="circleW"] {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  position: absolute;
+}
+
+.circleW1 {
+  top: -40%;
+  left: 85%;
+}
+
+.circleW2 {
+  top: -20%;
+  left: 81.5%;
+}
+
+.circleW3 {
+  top: -20%;
+  left: 88.5%;
+}
+
+[class*="circleG"] {
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  position: absolute;
+}
+
+.circleG1 {
+  height: 1.6rem;
+  width: 1.6rem;
+
+  top: 0%;
+  left: 84%;
+}
+
+.circleG2 {
+  height: 2rem;
+  width: 2rem;
+
+  top: 22%;
+  left: 90%;
+}
+
+.circleG3 {
+  height: 2.6rem;
+  width: 2.6rem;
+
+  top: 35%;
+  left: 80%;
+}
+
+/* 1 rem = 10 px */
+/** Breakpoints:
+
+mobile:
+  xxs: min-width: 360px
+  xs: min-width: 375px;
+  s: min-width: 390px;
+  md: min-width: 412px;
+
+tablet: 
+  sm: min-width: 768px;
+  md: min-width: 820px;
+  lg: min-width: 912px;
+
+
+desktop:
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+**/
+
+@media (min-width: 360px) {
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 390px) {
+}
+
+@media (min-width: 412px) {
+}
+
+@media (min-width: 768px) {
+  .circleW1 {
+    top: -40%;
+    left: 85%;
+  }
+
+  .circleW2 {
+    top: -20%;
+    left: 84%;
+  }
+
+  .circleW3 {
+    top: -20%;
+    left: 86%;
+  }
+
+  .circleG1 {
+    top: 0%;
+    left: 84.5%;
+  }
+
+  .circleG2 {
+    top: 22%;
+    left: 87%;
+  }
+
+  .circleG3 {
+    top: 35%;
+    left: 83%;
+  }
+}
+
+@media (min-width: 820px) {
+}
+
+@media (min-width: 1040px) {
+  .titleContainer {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
+}

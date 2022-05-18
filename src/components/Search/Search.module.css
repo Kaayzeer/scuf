@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  margin: 2rem 0rem;
+}
+
+.form {
+  width: 90%;
+  display: flex;
+  position: relative;
+  max-width: 100rem;
+}
+
+.input {
+  padding: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--color-grey-faded);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--color-black);
+  opacity: 0.6;
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.inputBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.inputBtn:hover {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-grey-faded);
+}
+
+.inputBtn:active {
+  opacity: 0.7;
+}
+
+/* 1 rem = 10 px */
+/** Breakpoints:
+
+mobile:
+  xxs: min-width: 360px
+  xs: min-width: 375px;
+  s: min-width: 390px;
+  md: min-width: 412px;
+
+tablet: 
+  sm: min-width: 768px;
+  md: min-width: 820px;
+  lg: min-width: 912px;
+
+
+desktop:
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+**/
+
+@media (min-width: 1024px) {
+  .buttonWrapper {
+    width: 180%;
+    overflow-y: hidden;
+  }
+
+  /*  .inputBtn {
+    position: absolute;
+    top: 0;
+    left: 84%;
+  } */
+}
+
+@media (min-width: 412px) {
+  .inputBtn {
+    position: absolute;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .inputBtn {
+    position: absolute;
+    top: 0;
+  }
+}

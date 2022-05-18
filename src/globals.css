@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&display=swap");
+
+*,
+*::placeholder {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* Converting 1rem = 10px */
+}
+
+body {
+  font-family: Lato, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: rgb(165, 208, 174);
+  --color-secondary: rgb(55, 175, 144);
+  --color-tertiary: rgb(71, 76, 80);
+
+  --color-button-black: rgb(71, 76, 80);
+  --color-button-red: rgb(241, 104, 102);
+  --color-button-green: rgb(55, 175, 144);
+
+  --color-black: rgb(11, 11, 11);
+  --color-white: rgb(255, 255, 255);
+
+  --color-grey-faded: rgba(218, 218, 218, 0.399);
+  --color-modal-bg: rgba(255, 255, 255, 0.301);
+  --color-placeholder: rgba(218, 218, 218);
+
+  --input-color: rgb(71, 76, 80, 0.05);
+}
+
+.svg-map {
+  height: 100%;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.svg-map__location {
+  fill: var(--color-secondary);
+  cursor: pointer;
+}
+.svg-map__location:focus,
+.svg-map__location:hover {
+  fill: var(--color-secondary);
+  outline: 0;
+  fill: #40cca9f1;
+}
+.svg-map__location[aria-checked="true"] {
+  fill: var(--color-tertiary);
+}
+
+/* 1 rem = 10 px */
+/** Breakpoints:
+
+mobile:
+  xxs: min-width: 360px
+  xs: min-width: 375px;
+  s: min-width: 390px;
+  md: min-width: 412px;
+
+tablet: 
+  sm: min-width: 768px;
+  md: min-width: 820px;
+  lg: min-width: 912px;
+
+
+desktop:
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+**/
+@media (min-width: 360px) {
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 390px) {
+}
+
+@media (min-width: 412px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 820px) {
+}
+
+@media (min-width: 912px) {
+}
+
+@media (min-width: 1280px) {
+}

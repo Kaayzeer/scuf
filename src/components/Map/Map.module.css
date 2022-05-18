@@ -1,0 +1,116 @@
+.container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.flagContainer {
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  height: 5.5rem;
+  padding: 0rem 1rem;
+  background-color: var(--color-secondary);
+  border-radius: 0.3rem;
+}
+
+.flagWrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: var(--color-white);
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.flagRod {
+  position: absolute;
+  top: 100%;
+  right: 1.5%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 2.5rem 1.5rem 0rem 1.5rem;
+  border-color: var(--color-button-black) transparent;
+}
+
+/* 1 rem = 10 px */
+/** Breakpoints:
+
+mobile:
+  xxs: min-width: 360px
+  xs: min-width: 375px;
+  s: min-width: 390px;
+  md: min-width: 412px;
+
+tablet: 
+  sm: min-width: 768px;
+  md: min-width: 820px;
+  lg: min-width: 912px;
+
+
+desktop:
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+  2xl: min-width: 1536px;
+**/
+
+@media (min-width: 360px) {
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 390px) {
+}
+
+@media (min-width: 412px) {
+  .container {
+    margin-top: 10rem;
+  }
+
+  .flagContainer {
+    top: -15%;
+    left: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 10rem;
+  }
+
+  .flagContainer {
+    top: -15%;
+    left: 20%;
+  }
+}
+
+@media (min-width: 820px) {
+}
+
+@media (min-width: 912px) {
+  .container {
+    margin-top: 10rem;
+  }
+
+  .flagContainer {
+    top: -8%;
+    left: 30%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    margin-top: 10rem;
+  }
+
+  .flagContainer {
+    top: -8%;
+    left: 30%;
+  }
+}
