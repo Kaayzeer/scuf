@@ -12,6 +12,8 @@ This is a solution to the [SCUF-Foodmap](https://www.scuf.se/glutenfritt/glutenf
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
+- [Contact](#contact)
+  - [Authors](#authors)
 
 ## Overview
 
@@ -48,4 +50,11 @@ The designs were created to the following widths by order:
 
 ### What We´ve learned
 
-This was our first real-life project and we learned so much. Like working in a team with a team-leader, Ux-Designer and a co-worker. This was a good learning experience and a nice project to have as an entry project as a frontend developer.
+This was our first real-life project and we learned so much. Like working in a team with a team-leader, Ux-Designer and a co-worker. This was a good learning experience and a nice project to have as an entry project as a frontend developer. We´ve worked agile with Scrum with sprints and retro-spective meetings and also had meetings with the client.
+
+## Contact
+
+### Authors
+
+- [Nikolas Rosinelli](https://github.com/kayzersozee)
+- [Onur Gursoy](https://github.com/onurgurso)
