@@ -30,6 +30,7 @@ body {
   --color-white: rgb(255, 255, 255);
 
   --color-grey-faded: rgba(218, 218, 218, 0.399);
+  --color-grey-faded2: rgba(21, 20, 20, 0.399);
   --color-modal-bg: rgba(255, 255, 255, 0.301);
   --color-placeholder: rgba(218, 218, 218);
 

@@ -5,7 +5,7 @@
 
 .container {
   text-align: center;
-  max-width: 80%;
+  max-width: 90%;
   min-height: 10%;
   overflow-y: hidden;
 
@@ -73,7 +73,7 @@ desktop:
     opacity: 1;
   }
 
-  .next {
+  /*   .next {
     position: absolute;
     right: 3%;
     height: inherit;
@@ -95,7 +95,7 @@ desktop:
     background-color: transparent;
     cursor: pointer;
     color: transparent;
-  }
+  } */
 }
 
 @media (min-width: 1024px) {

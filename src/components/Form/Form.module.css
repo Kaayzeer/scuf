@@ -95,16 +95,18 @@ input[type="text"]:focus {
   font-weight: 400;
   font-size: 1.8rem;
   color: var(--color-tertiary);
+  padding: 1rem;
 }
 
 .categoryTitle {
   width: 100%;
   margin-right: auto;
-  /* margin-left: 3rem; */
+
   margin-top: 2rem;
   font-size: 1.8rem;
-  color: var(--color-tertiary);
+
   font-weight: 400;
+  padding: 1rem;
 }
 
 .categoryWrapper {
@@ -112,11 +114,12 @@ input[type="text"]:focus {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  /*  max-width: 50rem; */
+
   width: 100%;
   height: 30rem;
-  /*   padding: 0rem 0.7rem; */
+
   margin-top: 1rem;
+  color: var(--color-tertiary);
 }
 
 .categoryLabel {
@@ -225,19 +228,11 @@ input[type="checkbox"]:active {
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* height: 20rem; */
+
   padding: 0rem 0.7rem;
   margin-top: 1rem;
   gap: 2rem;
 }
-
-.commentChoicesItem {
-  /*  width: 100%; */
-}
-
-/* .commentChoicesItem:last-child {
-  flex: 2 1 150px;
-}  */
 
 .commentChoicesLabel {
   display: flex;

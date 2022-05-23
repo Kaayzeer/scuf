@@ -22,7 +22,7 @@ export default function Slider({ click }) {
   };
   return (
     <>
-      <div className={styles.btnCunt}>
+      {/*      <div className={styles.btnCunt}>
         <button onClick={prevSlide} className={styles.prev}>
           <IoIosArrowBack />
         </button>
@@ -30,7 +30,7 @@ export default function Slider({ click }) {
         <button onClick={nextSlide} className={styles.next}>
           <IoIosArrowForward />
         </button>
-      </div>
+      </div> */}
       <section ref={contRef} className={styles.container}>
         <div className={styles.buttonWrapper}>
           {buttons.map((button, idx) => (

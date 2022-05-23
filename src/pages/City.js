@@ -23,7 +23,6 @@ export default function City() {
   const [searchInput, setSearchInput] = useState("");
   const [subCities, setSubCities] = useState([]);
   const [showSubCities, setShowSubCities] = useState([]);
-  /* const [selectValue, setSelectValue] = useState(null); */
 
   useEffect(() => {
     getPlaceDocuments("Places", "city", city).then((data) => setTips(data));
@@ -31,12 +30,19 @@ export default function City() {
   }, []);
 
   const selectElement = useRef(null);
-  /*  const filterCategory = (arr, vari) => {
-      [] = arr;
-     vari.map((tip) => {
-      if (tip.categories.includes(category)) categoryCollection.push(tip);
+  const myRef = useRef(null);
+
+  const scrollToRef = () => {
+    myRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "start",
     });
-  } */
+  };
+
+  useEffect(() => {
+    scrollToRef(myRef);
+  }, [scrollToRef]);
 
   const handleSliderClick = (category) => {
     let categoryCollection = [];
@@ -59,6 +65,7 @@ export default function City() {
     });
 
     setShowSubCities(filterCollection);
+    setPlaces([]);
   };
 
   const searchPlaces = (e) => {
@@ -85,10 +92,12 @@ export default function City() {
         searchPlaces={searchPlaces}
         handleClickSearch={handleClickSearch}
       />
-      {showSubCities.length > 0 && (
-        <CategoriesList places={showSubCities} city={city} />
-      )}
-      <CategoriesList places={places} city={city} />
+      <div ref={myRef}>
+        {showSubCities.length > 0 && (
+          <CategoriesList places={showSubCities} city={city} />
+        )}
+        <CategoriesList places={places} city={city} />
+      </div>
     </>
   );
 }
